@@ -1,5 +1,5 @@
 // pages/home/home.js
-var request = require('../../utils/Request.js')
+var LoginManager = require('../../utils/LoginManager.js')
 
 
 Page({
@@ -9,5 +9,10 @@ Page({
    */
   data: {
   
+  },
+  onLogin:function(){
+    LoginManager.userLogin('boya@lingshou.com','123456',function (e) {
+      
+    })
   }
 })
