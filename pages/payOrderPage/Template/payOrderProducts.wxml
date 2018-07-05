@@ -1,0 +1,22 @@
+<template name="payOrderProducts">
+  <view class='productsView'>
+    <view class='productTitleView'>
+      <text class='productsTitle'>商品信息</text>
+      <text class='insertProductText' bindtap='onInsertProduct'>+添加商品</text>
+    </view>
+    <image class='line'></image>
+    <block wx:for-items="{{productList}}">
+      <view class="productView">
+        <view class='productInfoView'>
+          <text class='productName'>Loho夏季爆款太阳眼镜镜片</text>
+          <text class='productCount'>x2</text>
+          <text class='productPrice'>￥30.00</text>
+        </view>
+        <view class='specificationView'>
+          <text class='specificationText'>球镜+12.50 柱镜10.00</text>
+          <text class='afterPrice'>￥25.00</text>
+        </view>
+      </view>
+    </block>
+  </view>
+</template>

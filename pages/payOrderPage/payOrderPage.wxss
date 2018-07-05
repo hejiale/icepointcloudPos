@@ -1,0 +1,61 @@
+/* pages/payOrderPage/payOrderPage.wxss */
+@import "../../utils/BackGroundTemplate/BackGroundTemplate.wxss";
+@import "Template/payOrderCustomer.wxss";
+@import "Template/payOrderProducts.wxss";
+@import "Template/payOrderAfterDiscount.wxss";
+@import "Template/payOrderDeductionMenu.wxss";
+
+.contentView{
+  position: absolute;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #f3f3f3;
+}
+
+.arrowImage {
+  margin-right: 5px;
+  width: 5px;
+  height: 10px;
+}
+
+.footView{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 44px;
+  background-color: white;
+  border-top: 1px solid #f3f3f3;
+  z-index: 600;
+}
+
+.remainPriceText{
+  margin-left: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.payOrderButton{
+  display: flex;
+  width: 100px;
+  height: 100%;
+  background-color: #507CFC;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+

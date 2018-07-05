@@ -1,8 +1,9 @@
 var HostURL = 'https://dev.icepointcloud.com';
+//api请求
 var Redirect = 'https://dev.icepointcloud.com/dashboard.jsp';
 
 //登录
-function login(userName, password, deviceType, callBack) {
+function login(userName, password, callBack) {
   let options = {
     account:  userName,
     password: password,
@@ -11,6 +12,7 @@ function login(userName, password, deviceType, callBack) {
 
   apiHttp(options, '/api/user/login').then(
     data => {
+
       typeof callBack == "function" && callBack(data, null)
     }).catch(e => {
     typeof callBack == "function" && callBack(null, e)
@@ -595,18 +597,10 @@ function apiHttp(parameter, method) {
       header: header,
       success: function (res) {
         console.log(res);
-        // //解析返回参数
-        // if (res.data != null) {
-        //   if ("Array" === res.data.constructor || "String" === res.data.constructor) {
-        //     resolve(res.data);
-        //   } else if ("object" === typeof res.data) {
-        //     if (res.data.result != null) {
-        //       resolve(res.data.result);
-        //     } else if (res.data.error != null) {
-        //       reject(res);
-        //     }
-        //   }
-        // }
+        //解析返回参数
+        if (res!= null) {
+          resolve(res);
+        }
       },
       fail: function (res) {
         reject(res);

@@ -1,0 +1,99 @@
+.customerView {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  width: 100%;
+  background-color: white;
+}
+
+.customerHeadImage {
+  padding: 15px;
+  width: 57px;
+  height: 57px;
+}
+
+.customerInfoView {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 87px);
+  padding: 15px 0px 15px 0px;
+}
+
+.customerNameView {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.customerNameText {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+.insertNewCustomer {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+}
+
+.customerMemberRightsView {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.customerBalanceView, .customerIntegralView, .customerDiscountView {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.customerIntegralText, .customerBalanceText, .customerDiscountText {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.customerIntegralTitle, .customerBalanceTitle, .customerDiscountTitle {
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+}
+
+.optometryView {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  width: 100%;
+  background-color: white;
+}
+
+.optometryTitle {
+  padding: 10px 0px 10px 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.optometryContentView {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 5px 10px 15px;
+  align-items: center;
+}
+
+.optometryInfoView {
+  display: flex;
+  flex-direction: column;
+}
+
+.optometryerText {
+  font-size: 14px;
+}
+
+.optometryDate {
+  padding-top: 5px;
+  font-size: 12px;
+  color: #96959a;
+}
+

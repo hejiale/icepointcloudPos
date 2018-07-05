@@ -1,0 +1,24 @@
+<template name="payOrderAfterDiscount">
+  <view class='afterDiscountView'>
+    <view class='afterDiscountContentView'>
+      <view class='totalPriceView'>
+        <text class='afterDiscountTitle'>原价</text>
+        <text class='totalPriceText'>￥24.22</text>
+      </view>
+      <view class='operationView'>
+        <text class='operationTitle'>-</text>
+      </view>
+      <view class='discountView'>
+        <text class='afterDiscountTitle'>折扣75%</text>
+        <text class='afterDiscountText'>200.83</text>
+      </view>
+      <view class='operationView'>
+        <text class='operationTitle'>=</text>
+      </view>
+      <view class='afterPriceView'>
+        <text class='afterDiscountTitle'>折后金额</text>
+        <text class='afterPriceText'>￥24.22</text>
+      </view>
+    </view>
+  </view>
+</template>

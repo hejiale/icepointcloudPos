@@ -1,0 +1,46 @@
+.afterDiscountView{
+  display: flex;
+  margin-top: 5px;
+  background-color: white;
+}
+
+.afterDiscountContentView{
+  display: flex;
+  margin-left: 15px;
+  width: calc(100% - 25px);
+}
+
+.totalPriceView, .discountView, .afterPriceView{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.operationView{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.afterDiscountTitle{
+  font-size: 12px;
+  color: #999999;
+  text-align: center;
+}
+
+.operationTitle{
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+}
+
+.totalPriceText, .afterDiscountText,.afterPriceText{
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}

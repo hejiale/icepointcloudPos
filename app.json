@@ -1,6 +1,17 @@
 {
   "pages":[
-    "pages/home/home"
+    "pages/home/home",
+    "pages/customerList/customerList",
+    "pages/detailCustomer/detailCustomer",
+    "pages/searchProduct/searchProduct",
+    "pages/optometryList/optometryList",
+    "pages/payOrderPage/payOrderPage",
+    "pages/payCashPage/payCashPage",
+    "pages/orderList/orderList",
+    "pages/orderDetail/orderDetail",
+    "pages/insertOptometry/insertOptometry",
+    "pages/setting/setting",
+    "pages/couponList/couponList"
   ],
   "window":{
     "backgroundTextStyle":"light",

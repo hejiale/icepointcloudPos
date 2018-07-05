@@ -1,0 +1,43 @@
+<import src="../../utils/BackGroundTemplate/BackGroundTemplate.wxml" />
+<view class="page">
+  <template is="bgTemplate"></template>
+  <view class='contentView'>
+    <view class='searchContentView'>
+      <view class='searchTextView'>
+        <image class='searchImage' src='../../assetsImage/icon_searchBox@2x.png'></image>
+        <input class='searchInput' placeholder='请输入商品名称' placeholder-style='font-size:12px;color:#999999;'></input>
+        <image class='scanCodeImage' src='../../assetsImage/icon_scanCode@2x.png' bindtap='onScanCode'></image>
+      </view>
+      <text class='searchButton'>搜索</text>
+    </view>
+    <view class='glassContentView'>
+      <scroll-view class='glassClassView' scroll-y="true">
+        <block wx:for-items="{{classList}}">
+          <view class="classView">{{item}}</view>
+        </block>
+      </scroll-view>
+      <scroll-view class='glassListView' scroll-y="true">
+        <block wx:for-items="{{productList}}">
+          <view class="glassView">
+            <text class='glassNameText'>Loho夏季爆款太阳眼镜镜片</text>
+            <view class='glassCountView'>
+              <text class='glassPriceText'>￥12.42</text>
+              <view class='editCartNumView'>
+                <image class='reduceImage' src='../../assetsImage/icon_reduceCart@2x.png'></image>
+                <text class='cartNumText'>1</text>
+                <image class='plusImage' src='../../assetsImage/icon_plusCart@2x.png'></image>
+              </view>
+            </view>
+          </view>
+        </block>
+      </scroll-view>
+    </view>
+    <view class='footView'>
+      <view class='footCartView'>
+        <image class='cartMenu' src='../../assetsImage/icon_cartMenu@2x.png'></image>
+        <text class='cartPriceText'>￥114.00</text>
+      </view>
+      <view class='settlementButton'>去结算</view>
+    </view>
+  </view>
+</view>

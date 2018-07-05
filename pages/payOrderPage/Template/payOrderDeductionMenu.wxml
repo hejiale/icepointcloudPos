@@ -1,0 +1,18 @@
+<template name="payOrderDeductionMenu">
+  <view class='deductionMenuView'>
+    <view class='couponMenu'>
+      <text class='couponTitle'>卡券抵扣</text>
+      <image class='arrowImage' src='../../assetsImage/icon_rightArrow@2x.png'></image>
+    </view>
+    <image class='line'></image>
+    <view class='integralMenu'>
+      <text class='integralTitle'>积分抵扣</text>
+      <image class='arrowImage' src='../../assetsImage/icon_rightArrow@2x.png'></image>
+    </view>
+    <image class='line'></image>
+    <view class='agentMenu'>
+      <text class='agentTitle'>经办人: 张文英</text>
+      <image class='arrowImage' src='../../assetsImage/icon_rightArrow@2x.png'></image>
+    </view>
+  </view>
+</template>

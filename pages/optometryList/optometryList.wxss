@@ -1,0 +1,6 @@
+/* pages/optometryList/optometryList.wxss */
+
+.contentView{
+  position: absolute;
+  width: 100%;
+}

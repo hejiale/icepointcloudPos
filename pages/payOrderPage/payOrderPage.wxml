@@ -1,0 +1,20 @@
+<import src="../../utils/BackGroundTemplate/BackGroundTemplate.wxml" />
+<import src="Template/payOrderCustomer.wxml" />
+<import src="Template/payOrderProducts.wxml" />
+<import src="Template/payOrderAfterDiscount.wxml" />
+<import src="Template/payOrderDeductionMenu.wxml" />
+
+<view class="page">
+  <template is="bgTemplate"></template>
+  <view class='contentView'>
+    <template is="payOrderCustomer"></template>
+    <template is="payOrderOptometry"></template>
+    <template is="payOrderProducts" data="{{productList}}"></template>
+    <template is="payOrderAfterDiscount"></template>
+    <template is="payOrderDeductionMenu"></template>
+    <view class='footView'>
+    <text class='remainPriceText'>剩余应收:</text>
+    <view class='payOrderButton'>收银</view>
+    </view>
+  </view>
+</view>

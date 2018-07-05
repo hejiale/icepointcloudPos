@@ -1,0 +1,18 @@
+.deductionMenuView{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  background-color: white;
+}
+
+.couponMenu,.integralMenu,.agentMenu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px 10px 15px;
+}
+
+.couponTitle,.integralTitle,.agentTitle{
+  font-size: 14px;
+  font-weight: 600;
+}

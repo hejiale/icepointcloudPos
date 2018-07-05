@@ -1,0 +1,39 @@
+<template name="payOrderCustomer">
+  <view class='customerView'>
+    <image class='customerHeadImage' src='../../assetsImage/icon_personHead@2x.png'>
+    </image>
+    <view class='customerInfoView'>
+      <view class='customerNameView'>
+        <text class='customerNameText'>坂田银时</text>
+        <image class='insertNewCustomer' src='../../assetsImage/icon_insertNewCustomer@2x.png'></image>
+      </view>
+      <view class='customerMemberRightsView'>
+        <view class='customerIntegralView' style='border-right: 1px solid #f5f5f5;'>
+          <text class='customerIntegralText'>1200</text>
+          <text class='customerIntegralTitle'>积分</text>
+        </view>
+        <view class='customerBalanceView' style='border-right: 1px solid #f5f5f5;'>
+          <text class='customerBalanceText'>￥200.83</text>
+          <text class='customerBalanceTitle'>储值</text>
+        </view>
+        <view class='customerDiscountView'>
+          <text class='customerDiscountText'>12%</text>
+          <text class='customerDiscountTitle'>折扣</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
+<template name="payOrderOptometry">
+  <view class='optometryView'>
+    <text class='optometryTitle'>验光信息</text>
+    <image class='line'></image>
+    <view class='optometryContentView' bindtap='onShowOptometryList'>
+      <view class='optometryInfoView'>
+        <text class='optometryerText'>验光师: 张思雅</text>
+        <text class='optometryDate'>日期: 2018-6-29</text>
+      </view>
+      <image class='arrowImage' src='../../assetsImage/icon_rightArrow@2x.png'></image>
+    </view>
+  </view>
+</template>

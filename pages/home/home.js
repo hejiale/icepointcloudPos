@@ -11,8 +11,11 @@ Page({
   
   },
   onLogin:function(){
-    LoginManager.userLogin('boya@lingshou.com','123456',function (e) {
-      
+    wx.navigateTo({
+      url: '../payOrderPage/payOrderPage',
     })
+    // LoginManager.userLogin('boya@lingshou.com','123456',function (e) {
+      
+    // })
   }
 })

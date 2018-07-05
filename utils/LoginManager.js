@@ -8,10 +8,7 @@ function userLogin(userName, password, cb) {
       //登录
       request.login(userName, password, res.platform, function(data, error) {
         if (data) {
-          getStoreEmployee(function (data) {
-
           
-          });
         } else {
           wx.showToast({
             title: '登录失败!',

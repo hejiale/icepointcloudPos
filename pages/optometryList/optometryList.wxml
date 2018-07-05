@@ -1,5 +1,6 @@
 <import src="../../utils/BackGroundTemplate/BackGroundTemplate.wxml" />
 <view class="page">
   <template is="bgTemplate"></template>
-  <button bindtap='onLogin'>登录</button>
+  <view class='contentView'>
+  </view>
 </view>
