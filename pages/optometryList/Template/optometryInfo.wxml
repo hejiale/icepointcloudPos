@@ -1,0 +1,26 @@
+<template name="optometryInfoTemplate">
+  <view class='optometryInfoView'>
+    <view class='optometryContentView'>
+      <view class='optometryRightContentView' style='border-right: 1px solid #f5f5f5;'>
+        <view class='optometryRightTitleView'>
+          <text class='optometryRightTitle'>右眼-R</text>
+        </view>
+        <block wx:for-items="{{optometryTypes}}">
+          <view class="optometryTypeView">
+            <text class='optometryTypeTitle'>{{item}}</text>
+          </view>
+        </block>
+      </view>
+      <view class='optometryLeftContentView'>
+        <view class='optometryLeftTitleView'>
+          <text class='optometryLeftTitle'>左眼-L</text>
+        </view>
+        <block wx:for-items="{{optometryTypes}}">
+          <view class="optometryTypeView">
+            <text class='optometryTypeTitle'>{{item}}</text>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</template>

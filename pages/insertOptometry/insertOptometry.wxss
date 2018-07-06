@@ -1,1 +1,99 @@
 /* pages/insertOptometry/insertOptometry.wxss */
+@import "../../utils/BackGroundTemplate/BackGroundTemplate.wxss";
+@import "Template/insertOptometryTemplate.wxss";
+
+.contentView{
+  position: absolute;
+  width: 100%;
+  padding-bottom: 69px;
+}
+
+.employeeView{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 44px;
+  background-color: white;
+}
+
+.employeeTitle,.purposeTitle{
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.selectEmployeeView{
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.selectEmployee{
+  font-size: 14px;
+  color: #9F9F9F;
+  margin-right: 10px;
+}
+
+.arrowImage {
+  width: 5px;
+  height: 10px;
+}
+
+.purposeView{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  width: 100%;
+  height: 44px;
+  background-color: white;
+}
+
+.optometryRemarkView {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  width: 100%;
+  height: 44px;
+  background-color: white;
+}
+
+.optometryRemarkTitle {
+  font-size: 14px;
+  margin-left: 15px;
+  font-weight: 600;
+}
+
+.optometryRemark {
+  font-size: 14px;
+  margin-left: 15px;
+  color: #9a9a9a;
+}
+
+.footView {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 64px;
+  background-color: white;
+  z-index: 888;
+  border-top: 1px solid #f5f5f5;
+}
+
+.chooseOptometryButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 30px);
+  height: 36px;
+  background-color: #507cfc;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 4px;
+}

@@ -1,2 +1,26 @@
-<!--pages/insertOptometry/insertOptometry.wxml-->
-<text>pages/insertOptometry/insertOptometry.wxml</text>
+<import src="../../utils/BackGroundTemplate/BackGroundTemplate.wxml" />
+<import src="Template/optometryListTemplate.wxml" />
+<import src="Template/insertOptometryTemplate.wxml" />
+<view class="page">
+  <template is="bgTemplate"></template>
+  <view class='contentView'>
+    <view class='employeeView'>
+      <text class='employeeTitle'>验光师</text>
+      <view class='selectEmployeeView'>
+        <text class='selectEmployee'>员工员工</text>
+        <image class='arrowImage' src='../../assetsImage/icon_rightArrow@2x.png'></image>
+      </view>
+    </view>
+    <view class='purposeView'>
+      <text class='purposeTitle'>用途</text>
+    </view>
+    <template is="optometryInfoTemplate" data="{{optometryTypes}}"></template>
+    <view class='optometryRemarkView'>
+      <text class='optometryRemarkTitle'>备注:</text>
+      <input class='optometryRemark'></input>
+    </view>
+  </view>
+  <view class='footView'>
+    <view class='chooseOptometryButton'>确认</view>
+  </view>
+</view>

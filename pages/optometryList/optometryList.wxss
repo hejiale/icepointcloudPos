@@ -1,6 +1,66 @@
 /* pages/optometryList/optometryList.wxss */
+@import "../../utils/BackGroundTemplate/BackGroundTemplate.wxss";
+@import "Template/optometryListTemplate.wxss";
+@import "Template/optometryInfo.wxss";
 
-.contentView{
+.contentView {
   position: absolute;
   width: 100%;
+  padding-bottom: 69px;
+}
+
+.optometryRemarkView {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  width: 100%;
+  height: 44px;
+  background-color: white;
+}
+
+.optometryRemarkTitle {
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+.optometryRemark {
+  font-size: 14px;
+  margin-left: 15px;
+  color: #9a9a9a;
+}
+
+.footView {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 64px;
+  background-color: white;
+  z-index: 888;
+  border-top: 1px solid #f5f5f5;
+}
+
+.chooseOptometryButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 30px);
+  height: 36px;
+  background-color: #507cfc;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.insertOptometryButton{
+  position: fixed;
+  right: 10px;
+  bottom: 100px;
+  width: 48px;
+  height: 48px;
+  z-index: 888;
 }

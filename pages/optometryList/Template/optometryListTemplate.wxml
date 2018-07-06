@@ -1,0 +1,17 @@
+<template name="optometryListTemplate">
+  <view class='optometryListView'>
+    <scroll-view class='optometryListScrollView' scroll-x="true">
+      <block wx:for-items="{{optometryList}}">
+        <view class="optometryItemView">
+          <view class='optometryItemSubView'>
+            <view class='optometryType'>远</view>
+            <view class='optometryOperationView'>
+            <text class='operationerText'>孙正</text>
+            <text class='operationDateText'>2018-06-15</text>
+            </view>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</template>

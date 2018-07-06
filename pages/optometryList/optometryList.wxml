@@ -1,6 +1,18 @@
 <import src="../../utils/BackGroundTemplate/BackGroundTemplate.wxml" />
+<import src="Template/optometryListTemplate.wxml" />
+<import src="Template/optometryInfo.wxml" />
 <view class="page">
   <template is="bgTemplate"></template>
   <view class='contentView'>
+    <template is="optometryListTemplate" data="{{optometryList}}"></template>
+    <template is="optometryInfoTemplate" data="{{optometryTypes}}"></template>
+    <view class='optometryRemarkView'>
+      <text class='optometryRemarkTitle'>备注:</text>
+      <text class='optometryRemark'>这是一段备注备注备注备注</text>
+    </view>
+  </view>
+  <image class='insertOptometryButton' src='../../assetsImage/icon_insertOptometry@2x.png' bindtap='onInsertOptometry'></image>
+  <view class='footView'>
+    <view class='chooseOptometryButton'>确认</view>
   </view>
 </view>

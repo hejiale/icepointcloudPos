@@ -13,6 +13,8 @@ Page({
     })
   },
   onShowOptometryList:function(){
-
+    wx.navigateTo({
+      url: '../optometryList/optometryList',
+    })
   }
 })
