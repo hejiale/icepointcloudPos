@@ -1,2 +1,28 @@
 <!--pages/orderList/orderList.wxml-->
-<text>pages/orderList/orderList.wxml</text>
+<import src="../../utils/BackGroundTemplate/BackGroundTemplate.wxml" />
+<import src="Template/orderItemTemplate.wxml" />
+<view class="page">
+  <template is="bgTemplate"></template>
+  <view class='contentView'>
+    <view class='searchContentView'>
+      <view class='searchTextView'>
+        <image class='searchImage' src='../../assetsImage/icon_searchBox@2x.png'></image>
+        <input class='searchInput' placeholder='请输入商品名或订单号' placeholder-style='font-size:12px;color:#999999;'></input>
+      </view>
+      <text class='searchButton'>搜索</text>
+    </view>
+    <view class='searchMenuView'>
+      <view class='orderMenuView' wx:if="{{orderType == null}}" style='color:#507CFC;' bindtap='onAllOrder'>全部</view>
+      <view class='orderMenuView' wx:else style='color:#999;' bindtap='onAllOrder'>全部</view>
+      <view class='orderMenuView' bindtap='onUnPay' wx:if="{{orderType == 'NOT_PAY'}}" style='color: #507CFC;'>草稿</view>
+      <view class='orderMenuView' bindtap='onUnPay' wx:else style='color: #999;'>草稿</view>
+      <view class='orderMenuView' bindtap='onUndelivery' wx:if="{{orderType == 'PENDING_DELIVERY'}}" style='color: #507CFC;'>有尾款</view>
+      <view class='orderMenuView' bindtap='onUndelivery' wx:else style='color: #999;'>有尾款</view>
+    </view>
+    <scroll-view class='orderListScrollView'>
+      <block wx:for-items="{{orderList}}">
+        <template is="orderItemView"></template>
+      </block>
+    </scroll-view>
+  </view>
+</view>

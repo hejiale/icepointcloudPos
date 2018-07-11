@@ -1,1 +1,130 @@
 /* pages/orderDetail/orderDetail.wxss */
+@import "../../utils/BackGroundTemplate/BackGroundTemplate.wxss";
+
+.contentView {
+  position: absolute;
+  width: 100%;
+}
+
+.orderNumView{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+}
+
+.orderNumText,.orderOptometryTitle{
+  padding: 10px 0px 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.orderNumRightView{
+  display: flex;
+  padding: 10px 20px 10px 0px;
+}
+
+.orderStatus,.copyText{
+  font-size: 14px;
+  color: #507CFC;
+  font-weight: 600;
+}
+
+.orderOptometryView{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1px;
+  width: 100%;
+  background-color: white;
+}
+
+.orderOptometryLeftView{
+  display: flex;
+  align-items: center;
+}
+
+.optometryerText,.optometryDateText{
+  font-size: 14px;
+  color: #9F9F9F;
+  margin-left: 20px;
+}
+
+.downArrowImage{
+  margin-right: 20px;
+  width: 11px;
+  height: 6px;
+}
+
+.orderDetailProductTitleView{
+  display: flex;
+  margin-top: 5px;
+  flex-direction: column;
+  background-color: white;
+}
+
+.orderProductTitle{
+  font-size: 16px;
+  padding: 10px 0px 10px 20px;
+  font-weight: 600;
+}
+
+.orderDetailProductListView{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1px;
+  padding-bottom: 10px;
+  background-color: white;
+}
+
+.orderProductItemView{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0px 0px 20px;
+}
+
+.orderProductItemName{
+  font-size: 14px;
+  width: 50%;
+  font-weight: 600;
+}
+
+.orderProductItemCount{
+  font-size: 12px;
+  color: #666666;
+  text-align: center;
+  width: 20%;
+}
+
+.orderProductItemPrice{
+  font-size: 14px;
+  width: calc(30% - 40px);
+  text-align: right;
+}
+
+.orderDetailPriceView{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+  padding-bottom: 10px;
+}
+
+.orderDetailPriceItemView{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 0px 20px;
+}
+
+.orderDetailPriceItemTitle{
+  font-size: 12px;
+}
+
+.orderDetailPriceItemPrice{
+  font-size: 14px;
+  color: #507CFC;
+}

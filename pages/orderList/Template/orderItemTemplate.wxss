@@ -1,0 +1,30 @@
+.orderItemView{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px 20px 0px 20px;
+}
+
+.orderTopItem,.orderBottomItem{
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.orderItemText{
+  display: flex;
+  flex: 1;
+  font-size: 12px;
+  color: #5A5A5A;
+  font-weight: 600;
+}
+
+.orderPirceText{
+  display: flex;
+  flex: 1;
+  width: 100%;
+  font-size: 12px;
+  color: #507CFC;
+  font-weight: 600;
+}
+

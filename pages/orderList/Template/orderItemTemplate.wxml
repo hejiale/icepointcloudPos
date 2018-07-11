@@ -1,0 +1,14 @@
+<template name='orderItemView'>
+  <view class="orderItemView" bindtap='onOrderDetail'>
+      <view class='orderTopItem'>
+        <text class='orderItemText'>201806280008900</text>
+        <text class='orderPirceText' style='text-align: center;'>￥12.45</text>
+        <text class='orderItemText'>2018-12-11</text>
+      </view>
+      <view class='orderBottomItem'>
+        <text class='orderItemText'>经办人：秦国辉</text>
+        <text class='orderItemText' style='text-align: center;'>客户：文涛</text>
+        <text class='orderItemText'>已审核</text>
+      </view>
+    </view>
+</template>

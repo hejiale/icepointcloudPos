@@ -1,2 +1,47 @@
-<!--pages/orderDetail/orderDetail.wxml-->
-<text>pages/orderDetail/orderDetail.wxml</text>
+<import src="../../utils/BackGroundTemplate/BackGroundTemplate.wxml" />
+<view class="page">
+  <template is="bgTemplate"></template>
+  <view class='contentView'>
+    <view class='orderNumView'>
+      <text class='orderNumText'>订单编号：201809015511098</text>
+      <view class='orderNumRightView'>
+        <text class='copyText'>复制</text>
+        <text class='orderStatus' style='padding-left: 30px;'>待审核</text>
+      </view>
+    </view>
+    <view class='orderOptometryView'>
+      <view class='orderOptometryLeftView'>
+        <text class='orderOptometryTitle'>验光信息</text>
+        <text class='optometryerText'>张权</text>
+        <text class='optometryDateText'>2016-12-11</text>
+      </view>
+      <image class='downArrowImage' src='../../assetsImage/icon_downArrow@2x.png'></image>
+    </view>
+    <view class='orderDetailProductTitleView'>
+      <text class='orderProductTitle'>商品信息</text>
+    </view>
+    <view class='orderDetailProductListView'>
+      <block wx:for-items="{{orderList}}">
+        <view class='orderProductItemView'>
+          <text class='orderProductItemName'>Loho夏季爆款太阳眼镜</text>
+          <text class='orderProductItemCount'>x2</text>
+          <text class='orderProductItemPrice'>￥ 30.00</text>
+        </view>
+      </block>
+    </view>
+    <view class='orderDetailPriceView'>
+      <view class='orderDetailPriceItemView'>
+        <text class='orderDetailPriceItemTitle'>商品总金额</text>
+        <text class='orderDetailPriceItemPrice'>￥ 36.96</text>
+      </view>
+      <view class='orderDetailPriceItemView'>
+        <text class='orderDetailPriceItemTitle'>整单优惠</text>
+        <text class='orderDetailPriceItemPrice'>-￥ 12.32</text>
+      </view>
+      <view class='orderDetailPriceItemView'>
+        <text class='orderDetailPriceItemTitle'>折后金额</text>
+        <text class='orderDetailPriceItemPrice'>￥ 24.64</text>
+      </view>
+    </view>
+  </view>
+</view>

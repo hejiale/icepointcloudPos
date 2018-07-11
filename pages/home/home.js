@@ -11,11 +11,14 @@ Page({
   
   },
   onLogin:function(){
-    wx.navigateTo({
-      url: '../payOrderPage/payOrderPage',
-    })
+    // wx.navigateTo({
+    //   url: '../payOrderPage/payOrderPage',
+    // })
     // LoginManager.userLogin('boya@lingshou.com','123456',function (e) {
       
     // })
+    wx.navigateTo({
+      url: '../orderList/orderList',
+    })
   }
 })
